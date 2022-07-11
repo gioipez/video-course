@@ -9,8 +9,8 @@ When doing video compression it's really important keep a tradeoff between video
 
 original    vs     0.5M bitrate
 
-<img src="images/Bitrate-Original_01.png" width="49%" height="50%">
-<img src="images/Bitrate-1m_01.png" width="49%" height="50%">
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/Bitrate-Original_01.png" width="49%" height="50%">
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/Bitrate-1m_01.png" width="49%" height="50%">
 
 In conclosion we are trying to make fit a big picture of big resolution on a "small tube".
 

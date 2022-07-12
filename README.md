@@ -3,6 +3,7 @@
 
 ## What is video?
 
+[Video](https://en.wikipedia.org/wiki/Video) is the sequence of still images (frames) in a given time. When you pass 24 still images or more in 1 second, your brain will take that as a video, so in summary video is a sequence of still images that causes our brain to think we have a moving scene.
 
 ## What is Audio?
 
@@ -21,6 +22,8 @@ Source: [ffmpeg detailed description](https://ffmpeg.org/ffmpeg.html#toc-Detaile
 
 ## Codecs and compression
 
+Typically video is shotted with professionals cameras that are able to generate big amount of frames per seconds in a high resolution, the result of that process is a big asset of a big file that contain in a given period all those frames. The main purpose of video recording is sharing with someone else to entertain, educate, train, or others via different devices, generally those devices doesn't count with enough [bandwidth](https://en.wikipedia.org/wiki/Bandwidth_(computing)) to receive large amount of data per second, that's why compress that information is really important, and there is where codecs plays a big role.
+
 Compression is the process of take a given input (can be a message, video, audio, files, etc) and transmit its content with less information, saving resources while transporting it. Depending on the application, this can support package loss or not, for example a document can not support missing package because it's part of the nature of it, but images, video or audio can live with that. We need to keep in mind as much as we compress, the quality will be lose [[1](https://github.com/GioLopez/video-course#sources)].
 
 
@@ -35,7 +38,12 @@ In conclusion we are trying to make fit a big picture of big resolution on a "sm
 
 ## Configuration parameters
 
-### Resolution
+### Resolution / Frame size
+
+It's the size of the images / frames that is passed per second, the usual resolutions are:
+
+[List of common resolutions](https://en.wikipedia.org/wiki/List_of_common_resolutions)
+
 
 ### Aspect ratio
 

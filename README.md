@@ -53,7 +53,7 @@ Resolution usages between 2009 and 2022
 
 By convention 4:3 (DAR) videos has a [PAR](http://www.arielnet.com/pages/show/adi-gba-01323/pixel-aspect-ratio#:~:text=D1%20has%20a%20screen%20resolution,Mac%20OS%20and%20Windows%20systems.) of `10:11 = 0.9090`, normally resolution of 720 x 480 (NTSC) or 720 x 576 (PAL). Wider screen resolutions as 16:9 DAR has a PAR of `40:33 = 1.2121`.
 
-Based on that, we have the following example:
+Now let's check an example where we can evaluate DAR, resolution, and PAR, Based on that, we have the following example:
 
 <img src="https://github.com/GioLopez/video-course/blob/main/Images/video_out_from_1610_video.png" width="100%" height="100%">
 

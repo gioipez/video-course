@@ -3,13 +3,7 @@
 
 ## What is video?
 
-[Video](https://en.wikipedia.org/wiki/Video) is the sequence of still images (frames) in a given time. When you pass 24 still images or more in 1 second, your brain will take that as a video, so in summary video is a sequence of still images that causes our brain to think we have a moving scene.
-
-## What is Audio?
-
-
-## What is Data?
-
+[Video](https://en.wikipedia.org/wiki/Video) is the sequence of still images (frames) in a given time. When you pass 24 still images or more in 1 second, your brain will take that as a video, so in summary video is a sequence of still images that causes our brain to think we have a moving scene. [Source](https://github.com/leandromoreira/ffmpeg-libav-tutorial)
 
 ## Detailed video compression process
 
@@ -40,12 +34,25 @@ In conclusion we are trying to make fit a big picture of big resolution on a "sm
 
 ### Resolution / Frame size
 
-It's the size of the images / frames that is passed per second, the usual resolutions are:
+It's the size of the images / frames that is passed per second, the usual resolutions can be found on this [List of common resolutions](https://en.wikipedia.org/wiki/List_of_common_resolutions)
 
-[List of common resolutions](https://en.wikipedia.org/wiki/List_of_common_resolutions)
+Resolution usages between 2009 and 2022
+
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/Screen_resolutions_between_2009_and_2022.png" width="40%" height="40%">
+
+[Screen Resolution Stats Worldwide](https://gs.statcounter.com/screen-resolution-stats#monthly-200903-202206)
 
 
 ### Aspect ratio
+
+Video not only has resolution, it has other components as:
+- Pixel Aspect Ratio: This is the size of each pixel, the minimum unit in a frame.
+- Storage Aspect Ratio
+- Display Aspect Ratio: it's the multiplication of Pixel Aspect Ration and Storage Aspect Ratio. `DAR=PARxSAR`
+
+
+4:3 Display Aspect Ratio (DAR) videos has a [Pixel Aspect Ratio](http://www.arielnet.com/pages/show/adi-gba-01323/pixel-aspect-ratio#:~:text=D1%20has%20a%20screen%20resolution,Mac%20OS%20and%20Windows%20systems.) (PAR) of `10:11 = 0.9090`, normally resolution of 720 x 480 (NTSC) or 720 x 576 (PAL). Wider screen resolutions as 16:9 DAR has a PAR of `40:33 = 1.2121`.
+
 
 ### Framerate
 
@@ -77,4 +84,5 @@ It's the size of the images / frames that is passed per second, the usual resolu
 ## Sources
 
 1. I'm following a structure similar to the one [Jan Ozer](https://www.linkedin.com/in/jan-ozer/) used on his course at [Udemy](https://www.udemy.com/course/compressing-video-for-web-disc-and-pctvconsole-playback/).
-2. 
+2. [List of common resolutions](https://en.wikipedia.org/wiki/List_of_common_resolutions).
+3. [Pixel Aspect Ratio](http://www.arielnet.com/pages/show/adi-gba-01323/pixel-aspect-ratio#:~:text=D1%20has%20a%20screen%20resolution,Mac%20OS%20and%20Windows%20systems.)

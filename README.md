@@ -55,7 +55,7 @@ By convention 4:3 (DAR) videos has a [PAR](http://www.arielnet.com/pages/show/ad
 
 Based on that, we have the following example:
 
-<img src="https://github.com/GioLopez/video-course/blob/main/Images/video_out_from_1610_video.png" width="40%" height="40%">
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/video_out_from_1610_video.png" width="100%" height="100%">
 
 This is the output of `ffprobe` command run on a transcoded asset
 

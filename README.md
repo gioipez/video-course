@@ -45,14 +45,37 @@ Resolution usages between 2009 and 2022
 
 ### Aspect ratio
 
-Video not only has resolution, it has other components as:
-- Pixel Aspect Ratio: This is the size of each pixel, the minimum unit in a frame.
-- Storage Aspect Ratio
-- Display Aspect Ratio: it's the multiplication of Pixel Aspect Ration and Storage Aspect Ratio. `DAR=PARxSAR`
+[Video](https://en.wikipedia.org/wiki/List_of_common_resolutions) not only has resolution, it has other components:
+- Pixel Aspect Ratio (PAR): This is the size of each pixel, the minimum unit in a frame.
+- Storage Aspect Ratio (SAR): 
+- Display Aspect Ratio (DAR): it's the multiplication of Pixel Aspect Ration and Storage Aspect Ratio. `DAR=PARxSAR`.
 
 
-4:3 Display Aspect Ratio (DAR) videos has a [Pixel Aspect Ratio](http://www.arielnet.com/pages/show/adi-gba-01323/pixel-aspect-ratio#:~:text=D1%20has%20a%20screen%20resolution,Mac%20OS%20and%20Windows%20systems.) (PAR) of `10:11 = 0.9090`, normally resolution of 720 x 480 (NTSC) or 720 x 576 (PAL). Wider screen resolutions as 16:9 DAR has a PAR of `40:33 = 1.2121`.
+By convention 4:3 (DAR) videos has a [PAR](http://www.arielnet.com/pages/show/adi-gba-01323/pixel-aspect-ratio#:~:text=D1%20has%20a%20screen%20resolution,Mac%20OS%20and%20Windows%20systems.) of `10:11 = 0.9090`, normally resolution of 720 x 480 (NTSC) or 720 x 576 (PAL). Wider screen resolutions as 16:9 DAR has a PAR of `40:33 = 1.2121`.
 
+Based on that, we have the following example:
+
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/video_out_from_1610_video.png" width="40%" height="40%">
+
+This is the output of `ffprobe` command run on a transcoded asset
+
+Resolution is `1920x1080`, `SAR=9/10` and `DAR=8/5`
+
+>NOTE: for `FFMPEG` SAR (Sample Aspect Ratio) and PAR (Pixel Aspect Ratio) are the same. 
+
+So for this specific video, that has resolution of `1080p`, the DAR is
+
+    DAR=PAR*(width/height)
+
+    DAR=PAR*width/height
+
+    DAR=1728/1080
+
+So that means this video with resolution of `1920x1080` will be shown in a display of `1728x1080`.
+
+Quicktime inspector show this same information
+
+<img src="https://github.com/GioLopez/video-course/blob/main/Images/quicktime_inspector_video_out_from_1610_video.png" width="40%" height="40%">
 
 ### Framerate
 
